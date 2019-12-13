@@ -1,0 +1,8 @@
+<Project>
+  <!-- Force NuGet's RestoreTask to run out-of-process in a 64-bit host by overriding
+       the default UsingTask in NuGet.targets with this one that attempts to find the
+       right assembly. -->
+  <UsingTask TaskName="NuGet.Build.Tasks.RestoreTask" AssemblyFile="$([MSBuild]::Unescape($([System.IO.Path]::Combine(
+          `$([MSBuild]::NormalizeDirectory($(NuGetRestoreTargets)))..`,
+          `$(RestoreTaskAssemblyFile)`))))" Architecture="x64" />
+</Project>
