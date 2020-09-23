@@ -1,0 +1,5 @@
+<Project>
+  <ItemGroup Condition="'$(TargetFrameworks)' != '' And '$(TargetFramework)' != ''">
+    <ProjectConfigurationDescription Include="TargetFramework=$(TargetFramework)"/>
+  </ItemGroup>
+</Project>
