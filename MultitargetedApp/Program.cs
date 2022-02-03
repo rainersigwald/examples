@@ -7,6 +7,7 @@ namespace MultitargetedApp
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            var c = new CppCli.Class1();
         }
     }
 }

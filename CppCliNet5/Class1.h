@@ -1,7 +1,11 @@
 #pragma once
-ref class Class1
-{
-public:
-	MultitargetedReference::Class1 C1;
-};
 
+namespace CppCli
+{
+	public ref class Class1
+	{
+	public:
+		MultitargetedReference::Class1 C1;
+	};
+
+}

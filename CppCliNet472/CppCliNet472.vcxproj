@@ -23,7 +23,7 @@
     <ProjectGuid>{9BE26EFF-9614-44D1-8207-EC4F1BF9D4B9}</ProjectGuid>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <Keyword>ManagedCProj</Keyword>
-    <RootNamespace>CppCliNet472</RootNamespace>
+    <RootNamespace>CppCli</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

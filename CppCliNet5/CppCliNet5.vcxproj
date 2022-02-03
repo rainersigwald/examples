@@ -22,7 +22,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{85ECC2C6-8D4D-4042-A711-897CF3EF9DF4}</ProjectGuid>
     <Keyword>NetCoreCProj</Keyword>
-    <RootNamespace>CppCliNet5</RootNamespace>
+    <RootNamespace>CppCli</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
