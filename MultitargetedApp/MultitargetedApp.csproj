@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CppCliNet472\CppCliNet472.vcxproj" Condition=" $(TargetFramework.StartsWith('net472')) " />
+    <ProjectReference Include="..\CppCliNet5\CppCliNet5.vcxproj" Condition=" $(TargetFramework.StartsWith('net5')) " />
+  </ItemGroup>
+
+</Project>
