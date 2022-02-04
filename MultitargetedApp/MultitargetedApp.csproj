@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CppCliNet472\CppCliNet472.vcxproj" Condition=" $(TargetFramework.StartsWith('net472')) " />
-    <ProjectReference Include="..\CppCliNet5\CppCliNet5.vcxproj" Condition=" $(TargetFramework.StartsWith('net5')) " />
+    <ProjectReference Include="..\CppCliNet5\CppCliNet5.vcxproj" ReferenceOutputAssembly="$([MSBuild]::IsTargetFrameworkCompatible('net5.0-windows', $(TargetFramework)))" />
+    <ProjectReference Include="..\CppCliNet472\CppCliNet472.vcxproj" ReferenceOutputAssembly="$([MSBuild]::IsTargetFrameworkCompatible('net472', $(TargetFramework)))" />
   </ItemGroup>
 
 </Project>
